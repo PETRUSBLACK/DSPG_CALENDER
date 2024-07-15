@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.month-year {
+    font-size: 1.2em;
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+
+.days-of-week div {
+    width: 14%;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days div {
+    width: 14%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.days div:hover {
+    background-color: #e0e0e0;
+}
+
+.days div.today {
+    background-color: #ffeb3b;
+}
+
+.days div.other-month {
+    color: #ccc;
+}
